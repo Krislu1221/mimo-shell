@@ -7,7 +7,7 @@
   "description": "Desktop & web shell for MiMo Code engine (mimo serve): paper dual-theme UI, settings, send queue, Feishu bot bridge.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_NAME/mimo-shell.git"
+    "url": "git+https://github.com/Krislu1221/mimo-shell.git"
   },
   "keywords": [
     "mimo",

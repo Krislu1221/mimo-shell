@@ -25,7 +25,7 @@ headless HTTP API 之上，自己写一个外壳——架构和 DSH 一样：**�
 curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --no-modify-path
 
 # 2. 依赖
-git clone https://github.com/YOUR_NAME/mimo-shell.git
+git clone https://github.com/Krislu1221/mimo-shell.git
 cd mimo-shell
 npm install
 (cd vendor/feishu && npm i)   # 飞书机器人桥用的 SDK
