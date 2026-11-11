@@ -1,0 +1,41 @@
+{
+  "name": "mimo-shell",
+  "private": false,
+  "version": "0.2.0",
+  "license": "MIT",
+  "type": "module",
+  "description": "Desktop & web shell for MiMo Code engine (mimo serve): paper dual-theme UI, settings, send queue, Feishu bot bridge.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_NAME/mimo-shell.git"
+  },
+  "keywords": [
+    "mimo",
+    "mimocode",
+    "shell",
+    "electron",
+    "webui",
+    "ai-agent",
+    "feishu",
+    "lark"
+  ],
+  "scripts": {
+    "dev": "vite --config web/vite.config.js",
+    "build": "vite build --config web/vite.config.js",
+    "serve": "node server/index.mjs",
+    "start": "npm run build && node server/index.mjs",
+    "app": "node scripts/electron.mjs .",
+    "dist:mac": "node scripts/package-mac.mjs",
+    "icon": "env -u ELECTRON_RUN_AS_NODE node scripts/electron.mjs scripts/make-icon.mjs",
+    "postinstall": "node -e \"const fs=require('fs');const p='vendor/feishu';if(!fs.existsSync(p+'/node_modules')){console.log('run: cd vendor/feishu && npm i')}\""
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^44.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.0.7"
+  },
+  "main": "app/main.mjs"
+}
